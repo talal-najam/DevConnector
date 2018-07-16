@@ -1,0 +1,9 @@
+1. set up editor
+2. install dependencies
+3. set up mlab
+5. set up express server
+6. listen on port
+7. bring mongoose
+8. setup db
+9. express router
+10. bring routes
