@@ -7,3 +7,11 @@
 8. setup db
 9. express router
 10. bring routes
+11. bring body parser to read form body e.g. req.body.email
+12. register
+13. postman
+14. passport
+15. login
+16. jwt
+17. bearer
+18. passport middleware and config
