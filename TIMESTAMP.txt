@@ -1,2 +1,3 @@
-https://www.udemy.com/mern-stack-front-to-back/learn/v4/t/lecture/10055288?start=0
-Section 8, Lecture 45
+URL     :  https://www.udemy.com/mern-stack-front-to-back/learn/v4/t/lecture/10055374?start=0
+Section :  9, Lecture 50
+Title   :  CreateProfile Component & Route
