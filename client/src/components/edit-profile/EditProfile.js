@@ -6,7 +6,7 @@ import TextAreaFieldGroup from '../common/TextAreaFieldGroup'
 import InputGroup from '../common/InputGroup'
 import SelectListGroup from '../common/SelectListGroup'
 import { createProfile, getCurrentProfile } from '../../actions/profileActions'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import isEmpty from '../../validation/is-empty'
 
 class EditProfile extends Component {
@@ -41,7 +41,7 @@ class EditProfile extends Component {
             const profile = nextProps.profile.profile
 
             // Bring skills array back to comma seperated values
-            const skillsCSV = profile.skills.join(',')
+            const skillsCSV = profile.skills.join(',');
 
             // If profile field doesn't exists, assign empty string
             profile.company = !isEmpty(profile.company) ? profile.company : ""
@@ -69,7 +69,8 @@ class EditProfile extends Component {
                 twitter: profile.twitter,
                 facebook: profile.facebook,
                 linkedin: profile.linkedin,
-                youtube: profile.youtube
+                youtube: profile.youtube,
+                instagram: profile.instagram,
             })
         }
     }
@@ -186,6 +187,9 @@ class EditProfile extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-8 m-auto">
+                            <Link to="/dashboard" className="btn btn-light">
+                                Go Back
+                            </Link>
                             <h1 className="display-4 text-center">Edit Profile</h1>
                             <small className="d-block pb-3">* = required fields</small>
                             <form onSubmit={this.onSubmit}>
